@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+<menu>
+    <add
+            id="Coditron_SearchAutoComplete::SearchAutoComplete_Label"
+            title="Ajax Search Autocomplete"
+            module="Coditron_SearchAutoComplete"
+            sortOrder="80"
+            resource="Coditron_SearchAutoComplete::SearchAutoComplete_Label"
+    />
+    <add
+            id="Coditron_SearchAutoComplete::SearchAutoComplete"
+            title="Ajax Search Settings"
+            module="Coditron_SearchAutoComplete"
+            action="adminhtml/system_config/edit/section/coditron_searchautocomplete/"
+            sortOrder="10"
+            parent="Coditron_SearchAutoComplete::SearchAutoComplete_Label"
+            resource="Coditron_SearchAutoComplete::SearchAutoComplete"
+    />
+</menu>
+</config>
